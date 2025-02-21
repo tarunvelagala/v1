@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/v1/',
   server: {
     allowedHosts: [
-      '5173-tarunvelagala-v1-2md0ne6eh7r.ws-us117.gitpod.io'
+      '5173-tarunvelagala-v1-3vwngx2q6rw.ws-us117.gitpod.io'
     ]
   }
 })
