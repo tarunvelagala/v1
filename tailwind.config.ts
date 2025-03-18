@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				neopop: {
+					'black': '#000000',
+					'white': '#FFFFFF',
+					'gray': '#E6E6E6',
+					'red': '#EB4545',
+					'blue': '#4287F5',
+					'purple': '#8352FF',
+					'yellow': '#FAE04B'
+				},
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				mono: ['SF Mono', 'monospace'],
+				display: ['Cal Sans', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -70,25 +85,48 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-in': {
+					from: { opacity: '0' },
+					to: { opacity: '1' }
+				},
+				'fade-in-up': {
+					from: { opacity: '0', transform: 'translateY(20px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				'fade-in-right': {
+					from: { opacity: '0', transform: 'translateX(-20px)' },
+					to: { opacity: '1', transform: 'translateX(0)' }
+				},
+				'slide-in': {
+					from: { transform: 'translateY(100%)' },
+					to: { transform: 'translateY(0)' }
+				},
+				'shimmer': {
+					from: { backgroundPosition: '200% 0' },
+					to: { backgroundPosition: '-200% 0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-in-up': 'fade-in-up 0.7s ease-out',
+				'fade-in-right': 'fade-in-right 0.7s ease-out',
+				'slide-in': 'slide-in 0.3s ease-out',
+				'shimmer': 'shimmer 2s linear infinite'
+			},
+			boxShadow: {
+				'neopop': '4px 4px 0 0 #000000',
+				'neopop-hover': '6px 6px 0 0 #000000',
+				'neopop-sm': '2px 2px 0 0 #000000',
+				'neopop-inner': 'inset 4px 4px 0 0 rgba(0, 0, 0, 0.2)',
 			}
 		}
 	},
