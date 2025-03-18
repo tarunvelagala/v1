@@ -8,6 +8,7 @@ import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { setupRevealAnimations } from '../lib/motion';
+import { ThemeProvider } from '../components/ThemeProvider';
 
 const Index = () => {
   useEffect(() => {
@@ -34,17 +35,19 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider attribute="class" defaultTheme="light">
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <Header />
+        <main>
+          <About />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 
