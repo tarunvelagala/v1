@@ -2,9 +2,11 @@
 import React, { useEffect, useRef } from 'react';
 import { images } from '../assets/images';
 import { ArrowRight } from 'lucide-react';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const About = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,7 +56,8 @@ const About = () => {
           </div>
         </div>
         
-        <div className="relative">
+        {/* Profile image that hides on mobile */}
+        <div className={`relative ${isMobile ? 'hidden' : 'block'}`}>
           <div className="w-full h-full max-w-md mx-auto">
             <div className="w-full aspect-[3/4] relative">
               <div className="absolute -left-4 -top-4 w-full h-full border-2 border-neopop-black bg-neopop-yellow"></div>
