@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.cdnfonts.com/css/sf-mono');
 @import url('https://fonts.cdnfonts.com/css/cal-sans');
@@ -155,29 +156,4 @@
 
 .glass-card {
   @apply bg-white/80 backdrop-blur-md border border-white/20 rounded-lg;
-}
-
-.dark .neopop-card {
-  @apply bg-gray-800 border-2 border-white/20 shadow-none transition-all duration-300 ease-in-out transform hover:-translate-y-1;
-}
-
-.dark .neopop-button {
-  @apply bg-gray-800 border-2 border-white/20 px-6 py-2 shadow-none font-medium transition-all duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-none active:translate-y-0;
-}
-
-.dark .glass-card {
-  @apply bg-gray-800/80 backdrop-blur-md border border-white/10 rounded-lg;
-}
-
-.dark .company-logo {
-  filter: grayscale(100%) brightness(1.5);
-  transition: all 0.3s ease;
-}
-
-.dark .company-logo:hover {
-  filter: grayscale(0%) brightness(1.5);
-}
-
-.dark .skill-pill {
-  @apply bg-gray-700 border border-white/20 px-4 py-1 text-sm inline-flex items-center justify-center font-mono transition-all duration-200 hover:bg-gray-600;
 }
