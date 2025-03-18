@@ -48,7 +48,7 @@ const About = () => {
               I'm a product designer specializing in creating intuitive digital experiences that combine aesthetics with functionality. With 8+ years of experience spanning multiple industries, I bring a human-centered approach to every project.
             </p>
             <a 
-              href="#contact" 
+              href="mailto:john.doe@example.com" 
               className="neopop-button inline-flex items-center gap-2"
             >
               Let's Connect <ArrowRight size={16} />
