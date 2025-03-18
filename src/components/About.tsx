@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { images } from '../assets/images';
-import { ArrowRight } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 const About = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -35,21 +35,22 @@ const About = () => {
           <div className="inline-block">
             <span className="block text-sm font-mono text-neopop-purple mb-2">HELLO, I'M</span>
             <h1 className="text-5xl md:text-6xl font-display font-bold text-neopop-black mb-4 leading-tight">
-              John Doe
+              Tarun Velagala
             </h1>
           </div>
           <div className="relative">
             <h2 className="text-3xl md:text-4xl font-display text-neopop-black/80 mb-6">
-              Senior Product Designer
+              Software Application Engineer II
             </h2>
             <p className="text-lg text-neopop-black/70 mb-8 max-w-lg">
-              I'm a product designer specializing in creating intuitive digital experiences that combine aesthetics with functionality. With 8+ years of experience spanning multiple industries, I bring a human-centered approach to every project.
+            Software Engineer with 5 years of experience in backend development, cloud computing and scalable
+            systems. Skilled in optimizing performance and building high-availability solutions with AWS and Java.
             </p>
             <a 
-              href="#contact" 
+              href="./resume.pdf" target='_blank'
               className="neopop-button inline-flex items-center gap-2"
             >
-              Let's Connect <ArrowRight size={16} />
+              Download Resume <ArrowDown size={16} />
             </a>
           </div>
         </div>
@@ -61,7 +62,7 @@ const About = () => {
               <div className="absolute left-0 top-0 w-full h-full border-2 border-neopop-black shadow-neopop overflow-hidden bg-white">
                 <img 
                   src={images.profile} 
-                  alt="John Doe" 
+                  alt="Tarun Velagala" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   onLoad={(e) => e.currentTarget.classList.remove('image-shimmer')}
