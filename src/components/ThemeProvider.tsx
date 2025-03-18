@@ -11,7 +11,7 @@ type ThemeProviderProps = {
   defaultTheme?: string
   storageKey?: string
   attribute?: NextThemeProviderProps['attribute']
-  value?: NextThemeProviderProps['value']
+  value?: object
   enableSystem?: boolean
   disableTransitionOnChange?: boolean
   forcedTheme?: string
