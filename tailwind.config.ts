@@ -69,7 +69,7 @@ export default {
 					'gray': '#E6E6E6',
 					'red': '#EB4545',
 					'blue': '#4287F5',
-					'purple': '#8352FF',
+					'purple': '#4169E1;',
 					'yellow': '#FAE04B'
 				},
 			},

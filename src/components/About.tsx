@@ -58,7 +58,7 @@ const About = () => {
         <div className="relative">
           <div className="w-full h-full max-w-md mx-auto">
             <div className="w-full aspect-[3/4] relative">
-              <div className="absolute -left-4 -top-4 w-full h-full border-2 border-neopop-black bg-neopop-yellow"></div>
+              <div className="absolute -left-4 -top-4 w-full h-full border-2 border-neopop-black bg-neopop-purple"></div>
               <div className="absolute left-0 top-0 w-full h-full border-2 border-neopop-black shadow-neopop overflow-hidden bg-white">
                 <img 
                   src={images.profile} 
