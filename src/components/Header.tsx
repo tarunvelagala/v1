@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
@@ -24,7 +23,6 @@ const Header = () => {
   }, [scrolled]);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
