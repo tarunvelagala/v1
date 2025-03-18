@@ -5,29 +5,43 @@ import { Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Senior Product Designer',
-    company: 'Google',
-    logo: images.companyLogos.google,
-    period: 'Jan 2020 - Present',
-    location: 'Mountain View, CA',
-    description: 'Led the redesign of Google Analytics dashboard, improving user engagement by 40%. Collaborated with engineering and product teams to develop and implement new features.',
+    title: 'Software Application Engineer II',
+    company: 'Amazon',
+    logo: images.companyLogos.amazon,
+    period: 'Oct 2023 - Feb 2025',
+    location: 'Bengaluru, KA',
+    description: [
+      'Implemented disaster recovery components for a data transformation engine, reducing operational overhead by 20% and streamlining 5 ETL pipeline migrations.',
+      'Migrated 2.6 PB of Redshift data to a private subnet using AWS and Python, ensuring 100% availability across 4 critical services with minimal downtime risk.',
+      'Enhanced an internal data-sharing platform by purging 50 TB of seller data and integrating 5 essential services.',
+      'Modernized a Balance Tracking Management service into a Java-based microservice on ECS and RDS, supporting payment corrections at 3 RPS with TestNG-based integration tests.'
+    ]
   },
   {
-    title: 'UI/UX Designer',
-    company: 'Microsoft',
-    logo: images.companyLogos.microsoft,
-    period: 'Mar 2017 - Dec 2019',
-    location: 'Seattle, WA',
-    description: 'Designed user interfaces for Microsoft 365 applications, focusing on accessibility and user experience. Created design systems and component libraries for cross-platform consistency.',
+    title: 'Software Application Engineer I',
+    company: 'Amazon',
+    logo: images.companyLogos.amazon,
+    period: 'Apr 2022 - Sep 2023',
+    location: 'Bengaluru, KA',
+    description: [
+      'Architected and deployed high-availability RESTful APIs for a Seller Payments Tracking Service (100K daily visits, 15 RPS), boosting query performance by 30% and mentoring interns.',
+      'Spearheaded dataset migration to an upgraded data warehouse, improving analytics capabilities by 25% across teams.',
+      'Engineered monitoring, CI/CD pipelines, and integration tests using TypeScript, CloudWatch, and TestNG for a Seller Payments Data Query Service, enhancing debugging and logging.',
+      'Identified and resolved $5M in seller balance discrepancies through automated ticketing and financial reporting enhancements using AWS Athena and S3.'
+    ]
   },
   {
-    title: 'Product Designer',
-    company: 'Apple',
-    logo: images.companyLogos.apple,
-    period: 'Jun 2015 - Feb 2017',
-    location: 'Cupertino, CA',
-    description: 'Contributed to the design of Apple Music interface across iOS and macOS platforms. Participated in user research and testing to iterate on product features.',
-  },
+    title: 'Support Engineer II',
+    company: 'Amazon',
+    logo: images.companyLogos.amazon,
+    period: 'Apr 2020 - Mar 2022',
+    location: 'Bengaluru, KA',
+    description: [
+      'Built Java-based server-side functionalities with REST APIs for a vendor-facing portal, improving response times by 15% using ORM, AWS API Gateway, and Lambda.',
+      'Integrated a traffic-shaping tool into the vendor portal, optimizing resource protection and reducing server costs by 20% by filtering bad actor traffic.',
+      'Optimized Java services using AWS profiling tools, identifying performance gaps and improving system efficiency by 10%.'
+    ]
+  }
 ];
 
 const Experience = () => {
@@ -45,7 +59,7 @@ const Experience = () => {
             >
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-white rounded-full overflow-hidden border-2 border-neopop-black p-2">
+                  <div className="w-16 h-16 bg-white overflow-hidden p-2">
                     <img 
                       src={exp.logo} 
                       alt={`${exp.company} logo`} 
@@ -69,11 +83,11 @@ const Experience = () => {
                       <span>{exp.location}</span>
                     </div>
                   </div>
-                  
-                  <p className="mt-4 text-neopop-black/70">
-                    {exp.description}
-                  </p>
                 </div>
+              </div>
+              <div className="flex-grow">
+                  {exp.description.map((point, index) => (
+                  <p key={index} className="mt-2 text-neopop-black/70">{point}</p>))}
               </div>
             </div>
           ))}
