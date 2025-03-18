@@ -40,7 +40,7 @@ const Header = () => {
             href="/" 
             className="text-neopop-black font-display font-bold text-2xl"
           >
-            Portfolio.
+            <img src='./logo.png' width="32" height="32"></img>
           </a>
 
           {/* Desktop Navigation */}

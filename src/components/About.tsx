@@ -35,7 +35,7 @@ const About = () => {
           <div className="inline-block">
             <span className="block text-sm font-mono text-neopop-purple mb-2">HELLO, I'M</span>
             <h1 className="text-5xl md:text-6xl font-display font-bold text-neopop-black mb-4 leading-tight">
-              Tarun Velagala
+              Tarun Kumar
             </h1>
           </div>
           <div className="relative">
