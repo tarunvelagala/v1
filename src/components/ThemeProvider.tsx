@@ -3,14 +3,13 @@
 
 import * as React from "react"
 import { ThemeProvider as NextThemesProvider } from "next-themes"
-import type { ThemeProviderProps as NextThemeProviderProps } from "next-themes"
 
-// Define ThemeProviderProps that matches NextThemeProviderProps
+// Fix the import path for ThemeProviderProps
 type ThemeProviderProps = {
   children: React.ReactNode
   defaultTheme?: string
   storageKey?: string
-  attribute?: NextThemeProviderProps['attribute']
+  attribute?: string
   value?: object
   enableSystem?: boolean
   disableTransitionOnChange?: boolean
